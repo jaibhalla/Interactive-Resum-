@@ -1,0 +1,301 @@
+body{
+  background-color: black;
+}
+#imageName{
+  display: none;
+}
+
+#seeStatic{
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 20px;
+  position: fixed;
+  bottom:15px;
+  color: #7C7D81;
+  left:50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 2;
+  transition: color 0.2s ease;
+}
+#seeStatic:hover{
+  color: white;
+}
+
+#Title{
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 25px;
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top:15px;
+  left:50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 2;
+  transition: opacity 0.4s ease-in, color 0.1s ease;
+}
+
+
+#Contact{
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 20px;
+  position: fixed;
+  bottom:15px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #1F2124;
+  z-index: 2;
+  transition: color 0.2s ease;
+  display: block;
+}
+
+canvas{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-width: 3px;
+  border-style: solid;
+  transition: all 0.2s ease;
+}
+
+#aboutPage,#page1,#page2,#page3{
+  position: fixed;
+  width: 900px;
+  height: 580px;
+  background-color: white;
+  display: none;
+  opacity: 0;
+  border-radius: 5;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-53%);
+  transition: opacity 0.4s ease-in;
+  transition-delay: 0.2s;
+}
+#Instructions{
+  background-color: white;
+  width: 790px;
+  height: 350px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display:none;
+  opacity: 0;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+  animation: box1 0.7s ease forwards 0.3s;
+}
+
+@keyframes box1 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+#Instructions h1{
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 30px;
+  position: fixed;
+  top:15px;
+  left:50%;
+  padding:0;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+#closeButton{
+  fill:#7C7D81;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+
+}
+
+#playButton{
+  width:50px;
+  height:50px;
+  position:fixed;
+  left: 50%;
+  bottom:7%;
+  transform: translateX(-50%);
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#playButton path{
+  fill:white;
+}
+
+#playButton circle{
+  fill:black;
+}
+
+rect{
+  width:100%;
+  height:100%;
+  stroke:#fff;
+  fill:#fff;
+  fill-opacity:0;
+  stroke-opacity:0;
+}
+
+
+p{
+  cursor: default;
+}
+
+#logo{
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-70%);
+  animation: fill 0.7s ease forwards 3.2s;
+}
+#logo path:nth-child(1){/* J */
+  stroke-dasharray:313;
+  stroke-dashoffset:313;
+  animation: line 2s ease forwards;
+
+}
+#logo path:nth-child(2){/* a */
+  stroke-dasharray:506;
+  stroke-dashoffset:506;
+  animation: line 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3){/* i */
+  stroke-dasharray:240;
+  stroke-dashoffset:240;
+  animation: line 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4){/* B */
+  stroke-dasharray:610;
+  stroke-dashoffset:610;
+          animation: line 2s ease forwards 0.9s;
+}
+#logo path:nth-child(5){/* h */
+  stroke-dasharray:478;
+  stroke-dashoffset:478;
+  animation: line 2s ease forwards 1.2s;
+}
+#logo path:nth-child(6){/* a */
+  stroke-dasharray:506;
+  stroke-dashoffset:506;
+  animation: line 2s ease forwards 1.5s;
+}
+#logo path:nth-child(7){/* l */
+  stroke-dasharray:240;
+  stroke-dashoffset:240;
+  animation: line 2s ease forwards 1.8s;
+}
+#logo path:nth-child(8){/* l */
+  stroke-dasharray:240;
+  stroke-dashoffset:240;
+  animation: line 2s ease forwards 1.8s;
+}
+#logo path:nth-child(9){/* a */
+  stroke-dasharray:506;
+  stroke-dashoffset:506;
+  animation: line 2s ease forwards 1.5s;
+}
+
+#Interactive{
+  position: absolute;
+  top:50%;
+  left:21%;
+  opacity: 0;
+  font-family: Raleway ;
+  font-style: normal;
+  font-weight: 530;
+  font-size: 30px;
+  color: #1F2124;
+  transition: color 0.4s ease;
+  animation: fadeIn 2s ease 3s 1 forwards;
+}
+
+#ExploreIR{
+  position: absolute;
+  z-index: 2;
+  margin-top: 0px;
+  padding:0px;
+  top:60%;
+  left: 15%;
+  font-family: Raleway;
+  font-style: normal ;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#Static{
+  position: absolute;
+  z-index: 2;
+  top:50%;
+  right:19%;
+  opacity: 0;
+  font-family: Raleway ;
+  font-style: normal;
+  font-weight: 530;
+  font-size: 30px;
+  color: #1F2124;
+  transition: opacity 0.4s ease;
+  animation: fadeIn 2s ease 3s 1 forwards
+}
+
+#ExploreSR{
+  position: absolute;
+  z-index: 2;
+  margin-top: 0px;
+  padding:0px;
+  top:60%;
+  right: 14.5%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+@keyframes line{
+  to{
+    stroke-dashoffset:0;
+  }
+}
+
+@keyframes fill{
+  from{
+    fill:transparent;
+  }
+  to{
+    fill:white;
+  }
+}
