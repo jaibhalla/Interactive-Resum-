@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet">
+    <title>Static Resume</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #staticResumeDocument{
+        width: 600px;
+        height: 800px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: -1px 1px 10px #ea6169;
+        top: 20px;
+    }
+    #div1{
+        width: 600px;
+        height: 800px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: -1px 1px 10px #ea6169;
+        top: 20px;
+    }
+    #home{
+        font-family: Raleway;
+        font-weight: 300;
+        font-size: 18px;
+        position: absolute;
+        top:10px;
+        color:#7C7D81;
+        left:25px;
+        transition: color 0.2s ease;
+    }
+    #home:hover{
+        color: white;
+    }
+</style>
+<body>
+    <a href="index.html"><p id ="home">Back to Home</p></a>
+    <div id = "div1"></div>
+    <img id = "staticResumeDocument" src="staticResume.jpg">
+</body>
+</html>
